@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application Admin</string>
+    <string name="title_activity_google_map">Map</string>
+    <string name="title_activity_user_get_order">Map</string>
+</resources>

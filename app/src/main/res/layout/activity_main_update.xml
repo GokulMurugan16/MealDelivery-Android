@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30sp"
+    android:orientation="vertical"
+    tools:context=".MainActivityUpdate">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" Add Meal"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150sp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/mImageView"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:hint="Meal Name"
+        android:id="@+id/mealName"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price : "/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:hint="Price Per Month"
+            android:textSize="15sp"
+            android:id="@+id/perMonthPrice"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:textSize="15sp"
+            android:hint="Price Per 6 Month"
+            android:id="@+id/per6MonthPrice"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description : "/>
+
+        <EditText
+            android:layout_width="250sp"
+            android:layout_height="150sp"
+            android:layout_marginLeft="10sp"
+            android:hint="Detailed Description"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:id="@+id/desc"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Allergy Alert"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10sp"
+            android:hint="Type of Food that is Added"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:id="@+id/allergy"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Meal"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:onClick="updateMeal"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Meal"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:onClick="deleteMeal"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
